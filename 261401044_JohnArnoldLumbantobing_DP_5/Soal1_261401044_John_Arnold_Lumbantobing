@@ -1,0 +1,22 @@
+program Soal1_261401044_John_Arnold_Lumbantobing;
+var 
+    i,n : integer;
+    total_belanja,discount,total_bayar: real;
+begin
+    writeln('Masukkan total buku yang ingin anda beli :');
+    readln(n);
+    for i:=1 to n do 
+    begin
+        total_belanja := n*10000;
+    end;
+    if (total_belanja >=500000) then
+    begin
+        discount:= total_belanja *0.2;
+    end
+    else if (total_belanja >100000) then
+    begin
+        discount:=total_belanja *0.1;
+    end;
+    total_bayar:= total_belanja-discount;
+    writeln('Maka total yang harus anda bayar adalah ',total_bayar:0:2,' silahkan bayar di kasir. Terimakasih!');
+end.
